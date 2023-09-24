@@ -1,0 +1,587 @@
+@charset "UTF-8";
+
+/* reset */
+:root {
+    --text-color: #f0f4f5;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Baloo Tammudu 2'; */
+    font-family: 'Exo 2';
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--text-color);
+
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+
+img:hover {
+    opacity: .7;
+}
+
+/* header */
+header {
+    width: 100%;
+
+    position: fixed;
+    z-index: 999;
+}
+
+header .headerInner {
+    width: 100%;
+    height: 80px;
+
+}
+
+header .headerInner nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 수직중앙정렬 */
+    padding: 8px 30px;
+
+}
+
+/* logo */
+header nav.navbar h1.navbar-logo {
+    font-size: 24px;
+    color: var(--color);
+    margin-top: 9px;
+}
+
+header nav.navbar h1.navbar-logo i {
+    color: #4a5a72;
+}
+
+/* menu - pc,mobile */
+header nav.navbar ul.navbar-menu {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    /* border:1px solid red; */
+}
+
+/* 각 메뉴 */
+header nav.navbar ul.navbar-menu li a {
+    margin-top: 20px;
+    padding: 13px 10px 13px 10px;
+    display: block;
+    font-size: 22px;
+}
+
+header nav.navbar ul.navbar-menu li a:hover,
+header nav.navbar ul.navbar-menu li a:focus {
+    color: #4a5a72;
+
+}
+
+/* sns */
+header nav.navbar ul.navbar-icons {
+    display: flex;
+    color: #fff;
+}
+
+header nav.navbar ul.navbar-icons a {
+    display: flex;
+}
+
+header nav.navbar ul.navbar-icons i {
+    padding: 8px 12px;
+}
+
+header nav.navbar ul.navbar-icons a:hover i {
+    color: #4a5a72;
+}
+
+header nav.navbar ul.navbar-icons a:focus i {
+    color: #4a5a72;
+}
+
+/* 토글버튼 가리기 */
+header nav.navbar a.navbar-toggleBtn {
+    display: none;
+}
+
+
+section#about {
+    width: 100%;
+    height: 1080px;
+    background: url("../images/bg.jpg")no-repeat center/cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+section#about .mainText .title {
+    position: absolute;
+    left: 30%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+section#about .title h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-weight: normal;
+}
+
+
+section#about .mainText .title p {
+
+    font-size: 90px;
+    font-weight: bold;
+}
+
+section#about .mainText .title img {
+    max-width: 100%;
+}
+
+section#about .mainText .ci {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(0, -50%);
+
+
+}
+
+
+section#about .mainText .ci h3 {
+    text-align: left;
+    font-size: 35px;
+    color: #fff;
+
+}
+
+section#about .mainText .ci p {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: -10px;
+}
+
+section#about .mainText .ci img {
+    position: absolute;
+    left: -12px;
+    top: 190px;
+}
+
+section#about p strong {
+    font-size: 30px;
+    font-family: 'Roboto';
+}
+
+section#photos {
+    width: 100%;
+    height: 550px;
+    background-color: #fff;
+    position: relative;
+}
+
+section#photos .photosInner {
+    width: 1400px;
+    margin: 0 auto;
+}
+section#photos .photosInner ul  { display: flex; gap:20px;}
+
+h3 {
+
+    font-size: 70px;
+    color: #000;
+    padding: 70px 0 30px 0;
+
+}
+
+section#photos .photosInner ul {
+    display: flex;
+}
+
+
+section#photos ul li {
+    
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+section#cv {
+    width: 100%;
+    height: 1000px;
+    background: url("../images/careerBg.jpg")no-repeat center/cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+section#cv .cvInner {
+    width: 1400px;
+    margin: 0 auto;
+
+}
+
+section#cv .cvInner h3 {
+
+    font-size: 70px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+section#cv .cvInner .redBox {
+    width: 700px;
+    height: 450px;
+    background-color: #E0002B;
+    position: absolute;
+    bottom: 100px;
+}
+
+section#cv .cvInner .redBox .tText p {font-size: 73px; font-weight: bold; padding: 30px;}
+section#cv .cvInner .redBox .tText span {font-size: 25px; padding-left: 30px; display: block; line-height: 1.6;}
+
+section#cv .cvInner .redBox .bottomW {
+    width: 50%;
+    height: 95px;
+    background-color: #fff;
+    position: absolute; 
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+  
+}
+section#cv .cvInner .redBox .bottomW p {color: #000; width: 70%; font-size: 25px; font-weight: bold; padding-left: 30px;}
+section#cv .cvInner .redBox .bottomW a { width: 30%; 
+    /* border:1px solid red; */
+}
+section#cv .cvInner .redBox .bottomW a img {   width: 100px; }
+
+section#cv .cvInner .redBox .tText p {font-size: 60px; font-weight: bold; padding: 30px;}
+section#cv .cvInner .redBox .tText span {font-size: 20px; padding-left: 30px; display: block; line-height: 1.6;}
+
+
+
+section#info {
+    width: 100%;
+    height: auto;
+    background-color: #e1e1e1;
+}
+
+
+
+section#info h3 {
+    color: #000;
+    /* text-align: center; */
+}
+
+section#info .productsInner {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+
+.information {
+
+    padding: 30px 0;
+    font-size: 18px;
+
+}
+
+.information .h1 {
+    font-size: 50px;
+    color: #848484;
+}
+
+.information .info-list {
+    display: flex;
+    gap: 5px;
+}
+
+.information .info-list li {
+    display: inline-block;
+
+    background-color: #333;
+    padding: 10px 0 17px 0;
+    font-size: 22px;
+    cursor: pointer;
+    width: 220px;
+    text-align: center;
+    font-family: 'Exo 2';
+
+}
+
+.information .info-list li.selected {
+    background-color: #FFF;
+    color: #000;
+}
+
+.information .info-content {
+    margin-bottom: 30px;
+    color: #666;
+    text-align: justify;
+}
+
+.information .info-content>div {
+    padding: 20px;
+    background-color: #FFF;
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+.information .info-content>div:not(:first-of-type) {
+    display: none;
+}
+.information img {float: left; margin: 20px;width: 600px;}
+.information p {font-size: 14px; color: #333; line-height: 1.59; margin-top: 13px; padding-right: 20px;}
+
+
+
+
+footer {
+    height: 70px;
+    padding: 0 20px 0 20px;
+    /* border:1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -10px;
+    position: relative;
+    background-color: #000;
+}
+
+
+
+footer p {
+    font-size: 13px;
+    color: #fff;
+    width: 80%;
+    margin-top: 5px;
+    /* border:1px solid red; */
+}
+
+footer ul.sns {
+    display: flex;
+    gap: 6px;
+    margin-top: 15px;
+    /* border:1px solid red; */
+}
+
+
+footer ul.sns li  i {color: #fff;}
+
+@media (max-width:730px) {
+
+    h3 {
+        font-size: 40px;
+        padding: 70px 0 30px 0;
+
+    }
+
+    section#cv .cvInner h3 {
+        font-size: 40px;
+        padding: 70px 0 30px 0;
+
+    }
+
+
+    header nav.navbar {
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    header nav.navbar ul.navbar-menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        display: none;
+    }
+
+    header nav.navbar ul.navbar-menu li {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    header nav.navbar ul.navbar-icons {
+        display: none;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    /* 토글버튼 */
+    header nav.navbar a.navbar-toggleBtn {
+        display: block;
+        /* 보기 */
+        position: absolute;
+        right: 32px;
+        top: 18px;
+        font-size: 24px;
+        color: #4a5a72;
+
+    }
+
+    header nav.navbar a.navbar-toggleBtn img {
+        width: 50px;
+        margin-top: 10px;
+    }
+
+    header nav.navbar ul.navbar-menu.active {
+        display: flex;
+    }
+
+    header nav.navbar ul.navbar-icons.active {
+        display: flex;
+    }
+
+
+
+    section#about .mainText .title {
+        position: absolute;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%, -50%);
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        text-align: left;
+    }
+
+    section#about .mainText .title img {
+        max-width: 100%;
+    }
+
+    section#about .mainText .ci {
+        position: absolute;
+        left: 70%;
+        top: 75%;
+        transform: translate(-90%, -50%);
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        text-align: left;
+    }
+
+
+
+    section#about .mainText h2 {
+        left: 70%;
+        font-size: 20px;
+
+    }
+
+    section#photos {
+        overflow: hidden;
+        height: auto;
+    }
+
+    section#photos .photosInner ul {
+
+        flex-direction: column;
+    }
+
+    section#photos .photosInner {
+        width: 88%;
+        margin: 0 auto;
+    }
+    section#photos .photosInner ul  { display: flex; gap:20px;}
+    
+
+ 
+    section#photos .photosInner ul li:last-child {margin-bottom: 50px;}
+    section#photos .photosInner ul li img {
+    width: 100%;
+    height: auto;
+ 
+    }
+
+    section#about h2 {
+
+        font-size: 15px;
+        margin-bottom: 50px;
+        text-align: center;
+        font-weight: normal;
+    }
+
+    section#about p {
+        font-family: 'Roboto';
+        font-size: 60px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+
+
+    section#photos ul {
+        display: block;
+        width: 100%;
+
+
+
+    }
+
+    section#photos ul li {
+
+        margin-bottom: 20px;
+
+    }
+
+    section#photos ul li img {
+        width: 100%;
+        height: auto;
+    }
+
+    section#cv {
+        
+        height: 600px;
+        background: url("../images/careerBg.jpg")no-repeat center/cover;
+        background-attachment: fixed;
+        position: relative;
+    }
+  
+    
+
+    section#cv .cvInner {width: 88%;}
+    section#cv .cvInner .redBox {
+        width: 88%;
+        height: 350px;
+        background-color: #E0002B;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    
+
+    section#cv .cvInner .redBox .bottomW p {color: #000; width: 70%; font-size: 22px; font-weight: bold; padding-left: 30px;}
+    section#cv .cvInner .redBox .bottomW a { width: 30%; }
+    section#cv .cvInner .redBox .bottomW a img {width: 90%; }
+
+    section#info .productsInner {
+        width: 88%;
+        margin: 0 auto;
+    }
+
+
+
+
+    footer ul.sns {
+      
+        position: absolute; bottom: 25px; right: 20px;
+    }
+
+
+
+}
