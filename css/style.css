@@ -197,6 +197,7 @@ section#photos {
 section#photos .photosInner {
     width: 1400px;
     margin: 0 auto;
+    max-width: 1400px;
 }
 section#photos .photosInner ul  { display: flex; gap:20px;}
 
@@ -233,6 +234,7 @@ section#cv {
 section#cv .cvInner {
     width: 1400px;
     margin: 0 auto;
+    max-width: 1400px;
 
 }
 
@@ -292,6 +294,7 @@ section#info h3 {
 section#info .productsInner {
     width: 1400px;
     margin: 0 auto;
+    max-width: 1400px;
 }
 
 
