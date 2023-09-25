@@ -197,7 +197,6 @@ section#photos {
 section#photos .photosInner {
     width: 1400px;
     margin: 0 auto;
-    max-width: 1400px;
 }
 section#photos .photosInner ul  { display: flex; gap:20px;}
 
@@ -234,7 +233,6 @@ section#cv {
 section#cv .cvInner {
     width: 1400px;
     margin: 0 auto;
-    max-width: 1400px;
 
 }
 
@@ -294,7 +292,6 @@ section#info h3 {
 section#info .productsInner {
     width: 1400px;
     margin: 0 auto;
-    max-width: 1400px;
 }
 
 
@@ -401,6 +398,8 @@ footer ul.sns li  i {color: #fff;}
 
     }
 
+	
+	
 
     header nav.navbar {
         flex-direction: column;
@@ -426,6 +425,8 @@ footer ul.sns li  i {color: #fff;}
         justify-content: center;
 
     }
+	
+	
 
     /* 토글버튼 */
     header nav.navbar a.navbar-toggleBtn {
@@ -444,6 +445,8 @@ footer ul.sns li  i {color: #fff;}
         margin-top: 10px;
     }
 
+	
+	
     header nav.navbar ul.navbar-menu.active {
         display: flex;
     }
@@ -452,6 +455,9 @@ footer ul.sns li  i {color: #fff;}
         display: flex;
     }
 
+	
+	
+	
 
 
     section#about .mainText .title {
